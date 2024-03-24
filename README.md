@@ -10,8 +10,19 @@ scheme, and the second or third line contains the archived message.
 ## Encoding
 The archival algorithm uses a binary tree. The edges of the tree represent bits, and the leaf
 nodes contain one character each. Internal nodes are empty. An edge to a left child
-always represents a 0, and an edge to a right child always represents a 1. Characters are
-encoded by the sequence of bits along a path from the root to a particular leaf. 
+always represents a 0, and an edge to a right child always represents a 1. The sequence of bits encodes characters along a path from the root to a particular leaf. <br>
+![Screenshot 2024-03-24 034024](https://github.com/BoFromTheEast/Archived_message/assets/116685199/1f1b372b-8740-4b60-90b5-f2125d5d97d3)<br>
+
+
+## Examples
+
+ Prev:<br>
+![Screenshot 2024-03-24 041630](https://github.com/BoFromTheEast/Archived_message/assets/116685199/2dc5dfb7-b233-4ba6-8292-9be7a891fce0)<br>
+
+ After:<br>
+![Screenshot 2024-03-24 041552](https://github.com/BoFromTheEast/Archived_message/assets/116685199/3dfc4fe4-6b31-4ebd-a218-a7ab1fa1aa66)
+
+
 
 ## Input Format
 The archive file consists of two lines: the first line contains the encoding scheme, and
